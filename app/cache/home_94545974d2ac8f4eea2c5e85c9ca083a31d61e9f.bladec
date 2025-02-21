@@ -1,0 +1,28 @@
+<?php $_shouldextend[1]=1; ?>
+
+
+<?php $this->startSection('title'); ?>
+TRANG CHU
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('content'); ?>
+ <div class="container">
+ <h1>Chào mừng đến với website</h1>
+ <div class="featured">
+ <h2>Bài viết nổi bật</h2>
+ <div class="articles-grid">
+ <div class="article-card">
+ <img src="/images/article1.jpg" alt="Article 1">
+ <h3>Bài viết 1</h3>
+ <p>Mô tả ngắn về bài viết...</p>
+ </div>
+ <div class="article-card">
+ <img src="/images/article2.jpg" alt="Article 2">
+ <h3>Bài viết 2</h3>
+ <p>Mô tả ngắn về bài viết...</p>
+ </div>
+ </div>
+ </div>
+ </div>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

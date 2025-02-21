@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title><?php echo $this->yieldContent('title'); ?></title>
+ <link rel="stylesheet" href="/bai3/public/css/style.css">
+</head>
+<body>
+ <header>
+ <nav class="main-nav">
+ <ul>
+ <li><a href="/bai3/public">Trang chủ</a></li>
+ <li><a href="/bai3/public/articles">Danh sách bài viết</a></li>
+ <li><a href="/bai3/public/about">Giới thiệu</a></li>
+ <li><a href="/bai3/public/contact">Liên hệ</a></li>
+ <li><a href="/bai3/app/Views/login.blade.php">Đăng nhập</a></li>
+ <li><a href="/bai3/public/register">Đăng ký</a></li>
+ </ul>
+ </nav>
+ </header>
+
+ <main>
+ <?php echo $this->yieldContent('content'); ?>
+ </main>
+
+ <footer>
+ <p>footer</p>
+ </footer>
+</body>
+</html>

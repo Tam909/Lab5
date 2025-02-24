@@ -1,5 +1,5 @@
 <?php
-const APP_URL = "http://localhost/lab5_php2/";
+const APP_URL = "http://localhost/PHP2/Demo/Lab5_php2/Lab5_php2/";
 
 //DataBase
 const HOST = "localhost";

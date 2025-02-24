@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB5 - @yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
@@ -21,7 +20,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ APP_URL . 'admin/movies' }}">Movies</a>
+                                <a class="nav-link active" aria-current="page" href="{{ APP_URL . 'admin/movies' }}">Sản Phẩm</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ APP_URL . 'admin/genres' }}">Genres</a>
@@ -31,11 +30,10 @@
                             </li>
                         </ul>
                         <form class="d-flex" action="{{ APP_URL . 'admin/movies/search' }}" method="GET">
-                            <input class="form-control me-2" type="search" name="keyword" placeholder="Search movies..." aria-label="Search">
+                            <input class="form-control me-2" type="search" name="keyword" placeholder="Search products..." aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                         <div class="ms-3">
-                            <span class="me-3"><strong>{{ $_SESSION['user']->username ?? '' }}</strong></span>
                             <a href="{{ APP_URL . 'logout' }}" class="btn btn-outline-danger btn-sm">Logout</a>
                         </div>
                     </div>
@@ -49,14 +47,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="mt-5 bg-light text-center py-3">
-            <p>&copy; 2025 Béo Bụng Bư. All Rights Reserved.</p>
-            <p>
-                Contact: 
-                <a href="mailto:admin@example.com">admin@example.com</a> 
-                <p href="">Béo Bựng Bự</p>
-            </p>
-        </footer>
+        
     </div>
 
     <!-- Bootstrap JS -->

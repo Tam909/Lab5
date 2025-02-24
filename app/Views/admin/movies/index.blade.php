@@ -1,21 +1,20 @@
 @extends('admin.master')
 
-@section('title', 'Quan ly Movie')
+@section('title', )
 
 @section('content')
 <div class="container w-75">
-    <h1>Quan ly Movies</h1>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Title</th>
-                <th scope="col">Poster</th>
-                <th scope="col">Intro</th>
-                <th scope="col">Date</th>
-                <th scope="col">Genres Name</th>
-                <th scope="col">Actions</th>\
-                <th scope="col">View Details</th>
+                <th scope="col">title </th>
+                <th scope="col">ảnh </th>
+                <th scope="col">Giới thiệu </th>
+                <th scope="col">Ngày</th>
+                <th scope="col">Tên</th>
+                <th scope="col">Thể loại </th>\
+                <th scope="col">Chi tiết </th>
                 <th scope="col">
                     <a href="{{ APP_URL . 'admin/movies/create' }}" class="btn btn-primary">Genres New</a>
                 </th>

@@ -37,7 +37,7 @@
             @endisset
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">Ngày công chiếu</label>
+            <label for="" class="form-label">Ngày đăng</label>
             <input type="date" name="release_date" id="" class="form-control">
             <!-- @isset($errors['release_date'])
                 <span class="text-danger">{{ $errors['release_date'] }}</span>
@@ -49,7 +49,7 @@
         </div> -->
         <div class="mb-3">
             <button type="submit" class="btn btn-secondary">Genres New</button>
-            <a href="{{ APP_URL . 'admin/movies' }}" class="btn btn-outline-warning">List Movie</a>
+            <a href="{{ APP_URL . 'admin/movies' }}" class="btn btn-outline-warning">Danh sáchsách</a>
         </div>
     </form>
 </div>

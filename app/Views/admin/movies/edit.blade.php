@@ -3,7 +3,7 @@
 @section('title', 'Edit Movie')
 
 @section('content')
-<h1>Edit Movie</h1>
+
 <div class="container w-50">
     @isset($message)
     <div class="alert alert-success">
@@ -19,7 +19,7 @@
             @endisset
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">Poster</label>
+            <label for="" class="form-label">ẢnhẢnh</label>
             <input type="file" name="poster" id="" class="form-control">
             @if ($movie->poster)
             <img src="{{ APP_URL . $movie->poster }}" alt="poster" width="100">
@@ -50,8 +50,8 @@
             <input type="date" name="release_date" id="" class="form-control" value="{{ $movie->release_date }}">
         </div>
         <div class="mb-3">
-            <button type="submit" class="btn btn-secondary">Update Movie</button>
-            <a href="{{ APP_URL . 'admin/movies' }}" class="btn btn-outline-warning">List Movie</a>
+            <button type="submit" class="btn btn-secondary">Cập nhậtnhật</button>
+            <a href="{{ APP_URL . 'admin/movies' }}" class="btn btn-outline-warning">Danh sáchsách</a>
         </div>
     </form>
 </div>

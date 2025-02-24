@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container w-50 mt-4">
-    <h1>Movie Details</h1>
+    <h1>Chi tiết sản phẩmphẩm</h1>
     <div class="card">
         <img src="{{ APP_URL . $movie->poster }}" class="card-img-top" alt="{{ $movie->title }}">
         <div class="card-body">
@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="mt-3">
-        <a href="{{ APP_URL . 'admin/movies' }}" class="btn btn-outline-secondary">Back to List</a>
+        <a href="{{ APP_URL . 'admin/movies' }}" class="btn btn-outline-secondary">Trở lại</a>
     </div>
 </div>
 @endsection
